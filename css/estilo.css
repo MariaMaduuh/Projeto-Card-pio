@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: Roboto;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('../imagens/bg-cardapio.jpg');
+}
+
+header {
+    height: 60px;
+    padding: 10px;
+    background-color: #6c0000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    box-shadow: 5px 5px 1em #6c0000 ;
+}
+
+.menu-principal {
+    display: flex;
+}
+
+.menu-principal li {
+    list-style: none;
+    background-color: #fff;
+    padding: 5px 10px;
+    color: #6c0000;
+    margin-left: 15px;
+
+}
+
+a {
+    color: #6c0000;
+    text-decoration: none;
+}
+
+    main {
+        max-width: 85%;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 80px 20px 50px 20px;
+    }
+
+h4 {
+    font-size: 30px;
+    color: #6c0000; 
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.refeicao,
+.bebidas,
+.sobremesas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article {
+    width: 300px;
+    border: 2px solid goldenrod;
+    background-color: #fff;
+    box-shadow: 1px 15px 1em #6c0000;
+    border-radius: 5px;
+}
+
+div {
+    padding: 20px 20px 0 20px;
+}
+
+.preço {
+    background-color: #6c0000;
+    border-radius: 100px;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #6c0000;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h5 {
+    color: #fff;
+    font-size: 30px;
+}
+
+li {
+    color: #fff;
+    font-size: 26px;
+    list-style: none;
+}
+
+.sitemap>li {
+    margin-top: 30px;
+}
+
+.sitemap>li>ul {
+    margin-left: 40px;
+}
+
+address {
+    color: #fff;
+    font-size: 24px;
+    margin: 30px 0;
+}
+@media (max-width: 768px) {
+   footer {
+    flex-direction: column-reverse;        
+    }
+    article {
+        width: 85%;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
